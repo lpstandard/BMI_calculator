@@ -1,8 +1,10 @@
 {
+  "homepage": "http://lpstandard.github.io/BMI_calculator/",
   "name": "bmicalculator",
   "version": "0.0.1",
   "private": true,
   "devDependencies": {
+    "gh-pages": "^2.1.1",
     "react-scripts": "0.8.5"
   },
   "dependencies": {
@@ -10,6 +12,8 @@
     "react-dom": "^15.4.2"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
